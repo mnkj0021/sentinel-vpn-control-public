@@ -1,0 +1,18 @@
+[Unit]
+Description=Sentinel Backend
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/sentinel/sentinel-vpn-control/backend
+ExecStart=/usr/bin/node dist/server.js
+Restart=always
+Environment=PORT=8787
+Environment=STATE_PATH=/opt/sentinel-state.json
+Environment=HEALTH_TARGET=1.1.1.1
+Environment=SENTINEL_API_KEY=7f5c0d6f9e014f4d8f3c6a2b71c94fcb6c2a0f6c4c1d4e1f9b2c7d8a5e0f9b3
+Environment=SENTINEL_ALLOWED_ORIGINS=https://dashboard.iamnadir.com
+Environment=SENTINEL_RATE_MAX=60
+Environment=SENTINEL_RATE_WINDOW=1 minute
+
+[Install]
+WantedBy=multi-user.target

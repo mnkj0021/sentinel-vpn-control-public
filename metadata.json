@@ -1,0 +1,5 @@
+{
+  "name": "Sentinel VPN Control",
+  "description": "Private WireGuard VPN Controller for managing device access, approvals, and server health monitoring.",
+  "requestFramePermissions": []
+}
