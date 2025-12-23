@@ -1,5 +1,5 @@
 # Sentinel Control Center (Phase 1)
-Owner-only VPN control plane: manual unlock approvals, device registry, server health, and audit log for a WireGuard host in the UK. No simulations—the backend manipulates real `wg` peers and expires sessions after TTL.
+Owner-only VPN control plane: manual unlock approvals, device registry, server health, and audit log for a WireGuard host in Germany. No simulations—the backend manipulates real `wg` peers and expires sessions after TTL.
 
 ## Contents
 - `backend/`: Fastify API that gates WireGuard peers, health, and logs.
@@ -11,7 +11,7 @@ Owner-only VPN control plane: manual unlock approvals, device registry, server h
 
 ## Prerequisites
 - Node.js 18+ on both frontend and backend hosts.
-- A Linux VPS with a public IP (UK) for the WireGuard server.
+- A Linux VPS with a public IP (Germany) for the WireGuard server.
 - WireGuard tools (`wg`, `wg-quick`) installed on the VPS.
 
 ## Run the backend (real)

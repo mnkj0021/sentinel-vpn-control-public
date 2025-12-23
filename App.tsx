@@ -274,7 +274,7 @@ function App() {
           <div className="bg-slate-950 rounded p-3 border border-slate-800">
             <div className="flex items-center gap-2 mb-2">
               <Server className="w-4 h-4 text-slate-500" />
-              <span className="text-xs font-mono text-slate-400">UK-LON-01</span>
+              <span className="text-xs font-mono text-slate-400">DE-BER-01</span>
             </div>
             <div className="flex items-center gap-2">
                <div className={`w-2 h-2 rounded-full ${health ? 'bg-emerald-500' : 'bg-red-500'} animate-pulse`}></div>
@@ -349,7 +349,7 @@ function App() {
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-md font-bold text-slate-200 flex items-center gap-2">
                     <Wifi className="w-4 h-4 text-emerald-400" />
-                    Upstream Quality (UK-LON-01)
+                    Upstream Quality (DE-BER-01)
                   </h3>
                   <div className="text-xs font-mono text-slate-500">Live 2s Interval</div>
                 </div>
